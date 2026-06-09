@@ -1,0 +1,23 @@
+{
+  "name": "website-mis-islamiyah-pariaman",
+  "version": "1.0.0",
+  "description": "Dashboard profesional sistem manajemen sekolah digital untuk MIS ISLAMIYAH PARIAMAN",
+  "main": "index.html",
+  "keywords": [
+    "school management",
+    "dashboard",
+    "education",
+    "system",
+    "management information system"
+  ],
+  "author": "MIS ISLAMIYAH PARIAMAN",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syafeigantengkataemak-maker/WEBSITE-MIS-ISLAMIYAH-PARIAMAN.git"
+  },
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  }
+}

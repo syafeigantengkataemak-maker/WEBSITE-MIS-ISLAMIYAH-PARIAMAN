@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistem Sekolah MIS ISLAMIYAH PARIAMAN</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="brand-text">
+                    <div class="brand-main">SISTEM SEKOLAH</div>
+                    <div class="brand-sub">MIS ISLAMIYAH PARIAMAN</div>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <!-- Dashboard -->
+                <a href="#" class="nav-item active" data-menu="dashboard">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <!-- PENERIMAAN SISWA -->
+                <div class="nav-category">PENERIMAAN SISWA</div>
+                <a href="#" class="nav-item" data-menu="pendaftaran">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Pendaftaran Siswa</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="data-pendaftar">
+                    <i class="fas fa-list"></i>
+                    <span>Data Pendaftar</span>
+                </a>
+
+                <!-- NILAI -->
+                <div class="nav-category">NILAI</div>
+                <a href="#" class="nav-item" data-menu="input-nilai">
+                    <i class="fas fa-edit"></i>
+                    <span>Input Nilai</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="data-nilai">
+                    <i class="fas fa-database"></i>
+                    <span>Data Nilai</span>
+                </a>
+
+                <!-- LAPORAN -->
+                <div class="nav-category">LAPORAN</div>
+                <a href="#" class="nav-item" data-menu="laporan-penerimaan">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Laporan Penerimaan</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="laporan-nilai">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Laporan Nilai</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="laporan-siswa">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Laporan Siswa</span>
+                </a>
+
+                <!-- MASTER -->
+                <div class="nav-category">MASTER</div>
+                <a href="#" class="nav-item" data-menu="data-siswa">
+                    <i class="fas fa-users"></i>
+                    <span>Data Siswa</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="data-kelas">
+                    <i class="fas fa-door-open"></i>
+                    <span>Data Kelas</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="mata-pelajaran">
+                    <i class="fas fa-book"></i>
+                    <span>Mata Pelajaran</span>
+                </a>
+
+                <!-- PENGATURAN -->
+                <a href="#" class="nav-item" data-menu="pengaturan">
+                    <i class="fas fa-cog"></i>
+                    <span>Pengaturan</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- HEADER TOP -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="hamburger-menu" id="hamburgerMenu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="page-title">Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="user-profile">
+                        <img src="https://ui-avatars.com/api/?name=Admin+Sekolah&background=0D8ABC&color=fff&size=40" alt="Admin Sekolah" class="avatar">
+                        <div class="user-info">
+                            <span class="user-name">Admin Sekolah</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- CONTENT AREA -->
+            <div class="content">
+                <!-- DASHBOARD PAGE -->
+                <div class="page" id="dashboard-page" style="display: block;">
+                    <!-- STATISTIK CARDS -->
+                    <div class="stats-container">
+                        <div class="stat-card stat-card-blue">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">128</div>
+                                <div class="stat-label">Siswa Aktif</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card stat-card-green">
+                            <div class="stat-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">15</div>
+                                <div class="stat-label">Pendaftar Baru (TA 2026/2027)</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card stat-card-orange">
+                            <div class="stat-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Mata Pelajaran Aktif</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card stat-card-purple">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">78.45</div>
+                                <div class="stat-label">Rata-rata Nilai (Semester Genap)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORMS SECTION -->
+                    <div class="forms-container">
+                        <!-- FORM PENDAFTARAN SISWA -->
+                        <div class="form-box">
+                            <h2 class="form-title">Pendaftaran Siswa Baru</h2>
+                            <form class="registration-form">
+                                <div class="form-group">
+                                    <label for="nama-lengkap">Nama Lengkap</label>
+                                    <input type="text" id="nama-lengkap" placeholder="Masukkan nama lengkap" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="tempat-lahir">Tempat Lahir</label>
+                                    <input type="text" id="tempat-lahir" placeholder="Masukkan tempat lahir" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="tanggal-lahir">Tanggal Lahir</label>
+                                    <input type="date" id="tanggal-lahir" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                                    <select id="jenis-kelamin" required>
+                                        <option value="">-- Pilih --</option>
+                                        <option value="laki-laki">Laki-laki</option>
+                                        <option value="perempuan">Perempuan</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="asal-sekolah">Asal Sekolah</label>
+                                    <input type="text" id="asal-sekolah" placeholder="Masukkan asal sekolah" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="kelas-tujuan">Kelas Tujuan</label>
+                                    <select id="kelas-tujuan" required>
+                                        <option value="">-- Pilih --</option>
+                                        <option value="kelas-1">Kelas 1</option>
+                                        <option value="kelas-2">Kelas 2</option>
+                                        <option value="kelas-3">Kelas 3</option>
+                                        <option value="kelas-4">Kelas 4</option>
+                                        <option value="kelas-5">Kelas 5</option>
+                                        <option value="kelas-6">Kelas 6</option>
+                                    </select>
+                                </div>
+
+                                <!-- BERKAS DIPERLUKAN -->
+                                <div class="checklist-box">
+                                    <h3>Berkas Diperlukan</h3>
+                                    <div class="checklist-item">
+                                        <i class="fas fa-check" style="color: #10b981;"></i>
+                                        <span>Fotokopi Akta Kelahiran</span>
+                                    </div>
+                                    <div class="checklist-item">
+                                        <i class="fas fa-check" style="color: #10b981;"></i>
+                                        <span>Fotokopi Kartu Keluarga</span>
+                                    </div>
+                                    <div class="checklist-item">
+                                        <i class="fas fa-check" style="color: #10b981;"></i>
+                                        <span>Fotokopi KTP Orang Tua</span>
+                                    </div>
+                                    <div class="checklist-item">
+                                        <i class="fas fa-check" style="color: #10b981;"></i>
+                                        <span>Pas Foto 3x4 (2 lembar)</span>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save"></i> Simpan Pendaftaran
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- FORM INPUT NILAI -->
+                        <div class="form-box">
+                            <h2 class="form-title">Input Nilai Siswa</h2>
+                            <form class="grade-form">
+                                <div class="form-group">
+                                    <label for="siswa">Siswa</label>
+                                    <select id="siswa" required>
+                                        <option value="">-- Pilih Siswa --</option>
+                                        <option value="siswa-1">Ahmad Reza Pratama</option>
+                                        <option value="siswa-2">Siti Nurhaliza</option>
+                                        <option value="siswa-3">Muhammad Ridho</option>
+                                        <option value="siswa-4">Ayu Puspita Sari</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mata-pelajaran-input">Mata Pelajaran</label>
+                                    <select id="mata-pelajaran-input" required>
+                                        <option value="">-- Pilih Mata Pelajaran --</option>
+                                        <option value="matematika">Matematika</option>
+                                        <option value="bahasa-indonesia">Bahasa Indonesia</option>
+                                        <option value="ipa">IPA</option>
+                                        <option value="ips">IPS</option>
+                                        <option value="agama">Pendidikan Agama</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="kelas-input">Kelas</label>
+                                    <select id="kelas-input" required>
+                                        <option value="">-- Pilih Kelas --</option>
+                                        <option value="1a">1A</option>
+                                        <option value="2a">2A</option>
+                                        <option value="3a">3A</option>
+                                        <option value="4a">4A</option>
+                                        <option value="5a">5A</option>
+                                        <option value="6a">6A</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nilai">Nilai</label>
+                                    <input type="number" id="nilai" placeholder="Masukkan nilai (0-100)" min="0" max="100" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="semester">Semester</label>
+                                    <select id="semester" required>
+                                        <option value="">-- Pilih Semester --</option>
+                                        <option value="ganjil">Ganjil</option>
+                                        <option value="genap">Genap</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-success">
+                                    <i class="fas fa-save"></i> Simpan Nilai
+                                </button>
+                            </form>
+
+                            <!-- KETERANGAN NILAI -->
+                            <div class="grade-legend">
+                                <h3>Keterangan Nilai</h3>
+                                <div class="legend-item">
+                                    <span class="legend-range">0 - 59</span>
+                                    <span class="legend-label">Kurang</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-range">60 - 74</span>
+                                    <span class="legend-label">Cukup</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-range">75 - 89</span>
+                                    <span class="legend-label">Baik</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-range">90 - 100</span>
+                                    <span class="legend-label">Sangat Baik</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REPORTS SECTION -->
+                    <div class="reports-container">
+                        <!-- LAPORAN PENERIMAAN SISWA -->
+                        <div class="report-box">
+                            <div class="report-header">
+                                <h2 class="report-title">Laporan Penerimaan Siswa</h2>
+                                <button class="btn btn-print">
+                                    <i class="fas fa-print"></i> Cetak
+                                </button>
+                            </div>
+                            <table class="report-table">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama</th>
+                                        <th>Asal Sekolah</th>
+                                        <th>Tanggal Daftar</th>
+                                        <th>Kelas Tujuan</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Ahmad Reza Pratama</td>
+                                        <td>SD Negeri 01</td>
+                                        <td>15-06-2026</td>
+                                        <td>Kelas 1</td>
+                                        <td><span class="badge badge-accepted">Diterima</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Siti Nurhaliza</td>
+                                        <td>SD Al-Azhar</td>
+                                        <td>16-06-2026</td>
+                                        <td>Kelas 1</td>
+                                        <td><span class="badge badge-accepted">Diterima</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Muhammad Ridho</td>
+                                        <td>SD Negeri 02</td>
+                                        <td>18-06-2026</td>
+                                        <td>Kelas 1</td>
+                                        <td><span class="badge badge-pending">Proses</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Ayu Puspita Sari</td>
+                                        <td>SD Negeri 03</td>
+                                        <td>20-06-2026</td>
+                                        <td>Kelas 1</td>
+                                        <td><span class="badge badge-accepted">Diterima</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Budi Santoso</td>
+                                        <td>SD Muhammadiyah</td>
+                                        <td>22-06-2026</td>
+                                        <td>Kelas 1</td>
+                                        <td><span class="badge badge-pending">Proses</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="view-all-link">Lihat semua pendaftar →</a>
+                        </div>
+
+                        <!-- LAPORAN NILAI SISWA -->
+                        <div class="report-box">
+                            <div class="report-header">
+                                <h2 class="report-title">Laporan Nilai Siswa</h2>
+                                <button class="btn btn-print">
+                                    <i class="fas fa-print"></i> Cetak
+                                </button>
+                            </div>
+                            <table class="report-table">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama</th>
+                                        <th>Mata Pelajaran</th>
+                                        <th>Kelas</th>
+                                        <th>Nilai</th>
+                                        <th>Semester</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Ahmad Reza Pratama</td>
+                                        <td>Matematika</td>
+                                        <td>1A</td>
+                                        <td>85</td>
+                                        <td>Genap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Siti Nurhaliza</td>
+                                        <td>Bahasa Indonesia</td>
+                                        <td>1A</td>
+                                        <td>92</td>
+                                        <td>Genap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Muhammad Ridho</td>
+                                        <td>IPA</td>
+                                        <td>2A</td>
+                                        <td>78</td>
+                                        <td>Genap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Ayu Puspita Sari</td>
+                                        <td>IPS</td>
+                                        <td>3A</td>
+                                        <td>88</td>
+                                        <td>Genap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Budi Santoso</td>
+                                        <td>Agama</td>
+                                        <td>2A</td>
+                                        <td>95</td>
+                                        <td>Genap</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="view-all-link">Lihat semua nilai →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p>&copy; 2024 Sistem Sekolah - All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
